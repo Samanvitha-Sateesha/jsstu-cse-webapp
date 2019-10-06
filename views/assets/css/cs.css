@@ -22,7 +22,10 @@ h1{
  	/*background-color: white;*/
  }
  body{
- 	padding-top: 20px;
+	 padding-top: 20px;
+	 padding-right: 20px;
+	 padding-left: 20px;
+	 padding-bottom: 20px;
  }	
  .marquee{
  	font-family: 'Grenze';
@@ -98,8 +101,72 @@ h1{
   }
   
   .text {
-	background-color: #ca3737d5;
+	background-color: #1f428fd5;
 	color: white;
 	font-size: 10px;
 	padding: 16px 32px;
+  }
+  .sidebar {
+	width: relative;
+	background-color: #f2f0f8;
+	position: relative;
+	/* top: 180px;
+  	left: 40px;
+	height: 100%;*/
+	overflow-x: hidden;
+	z-index: 1;
+	padding-top: 20px;
+  }
+  
+  .sidebar a {
+	display: block;
+	color: black;
+	padding: 16px;
+	text-decoration: none;
+  }
+   
+  .sidebar a.active {
+	background-color: rgb(229, 238, 230);
+	color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+	background-color: #555;
+	color: white;
+  }
+  .sidebar a, .dropdown-btn {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #818181;
+	display: block;
+	border: none;
+	background: none;
+	width:100%;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+  }
+  
+  div.content {
+	margin-left: 200px;
+	padding: 1px 16px;
+	height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+	.sidebar {
+	  width: 100%;
+	  height: auto;
+	  position: relative;
+	}
+	.sidebar a {float: left;}
+	div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+	.sidebar a {
+	  text-align: center;
+	  float: none;
+	}
   }

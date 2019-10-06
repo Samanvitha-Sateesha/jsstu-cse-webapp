@@ -17,7 +17,7 @@
 	<nav class="navbar navbar-expand-sm justify-content-center ">
 		<!-- Brand/logo -->
 		<a class="navbar-brand" href="#">
-			<img src="mvp.jpeg" class="img-fluid d-block" alt="logo" style="width:200px;">
+			<img src="mvp.jpeg" class="img-fluid d-block" alt="logo" style="width:100%;">
 		</a>
 		<div class="container justify-content-md-center">
 			<div class="header">
@@ -26,7 +26,7 @@
 			</div>
 		</div>
 		<a class="justify-content-md-end" href="#">
-			<img src="jss_logo.jpg" class="img-fluid d-block" alt="logo" style="width:300px;">
+			<img src="jss_logo.jpg" class="img-fluid d-block" alt="logo" style="width:350px; height:100px;">
 		</a>
 	</nav>
 	<br>
@@ -39,32 +39,25 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-3">
-				<div class="list-group list">
-					<a href="#" class="list-group-item list-group-item-action active disabled">
-						GO TO
-					</a>
-					<a href="#" class="list-group-item list-group-item-action list-group-item-dark">Faculty</a>
-					<a href="#" class="list-group-item list-group-item-action list-group-item-dark">Facilities</a>
-					<a href="#" class="list-group-item list-group-item-action list-group-item-dark">labs</a>
-					<div class="dropdown">
-						<!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				    			Time Table
-				  				</button> -->
-						<a href="#" class="list-group-item list-group-item-action" class="dropdown"
-							id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-							aria-expanded="false">Time table</a>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" href="#">I</a>
-							<a class="dropdown-item" href="#">II</a>
-							<a class="dropdown-item" href="#">III</a>
-							<a class="dropdown-item" href="#">IV</a>
-						</div>
-					</div>
-					<a href="#" class="list-group-item list-group-item-action list-group-item-dark">NBA</a>
-					<a href="#" class="list-group-item list-group-item-action list-group-item-dark">Calender of Events</a>
-					<a href="#" class="list-group-item list-group-item-action list-group-item-dark">TEQUIP-III</a>
-					<a href="#" class="list-group-item list-group-item-action list-group-item-dark">Research</a>
-					<a href="#" class="list-group-item list-group-item-action list-group-item-dark">Projects</a>
+				<div class="sidebar">
+				  <a href="#about" >Faculty</a>
+				  <a href="#services">Facilities</a>
+				  <a href="#clients">Labs</a>
+  				  <a href="#contact">Contact</a>
+			      	<button class="dropdown-btn">Time Table
+				    	<i class="fa fa-caret-down"></i>
+			        </button>
+			    	<div class="dropdown-container">
+    					<a href="#" >I</a>
+    					<a href="#">II</a>
+    					<a href="#">III</a>
+    					<a href="#">IV</a>
+  					</div>
+  				  <a href="#NBA">NBA</a>
+  				  <a href="#NBA" >Calender of Events</a>
+  				  <a href="#NBA">TEQUIP-III</a>
+				  <a href="#NBA">Research</a>
+				  <a href="#NBA">Projects</a>
 				</div>
 			</div>
 
@@ -230,7 +223,24 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
+	<script>
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+ 		 dropdown[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+ 	   	var dropdownContent = this.nextElementSibling;
+ 	   	if (dropdownContent.style.display === "block") {
+	      dropdownContent.style.display = "none";
+	    } else {
+      	dropdownContent.style.display = "block";
+ 	   		}
+	  	  });
+		}
+	</script>
+
+
 
 </body>
-
 </html>

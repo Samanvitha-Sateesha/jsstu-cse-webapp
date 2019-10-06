@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CS Department</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./assets/css/cs.css">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Grenze:400,400i,700,700i|Roboto+Slab:400,700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css"
+		href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<!---->
+<div class="sidenav">
+  <a href="#about">Faculty</a>
+  <a href="#services">Facilities</a>
+  <a href="#clients">Labs</a>
+  <a href="#contact">Contact</a>
+  <button class="dropdown-btn">Time Table
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">I</a>
+    <a href="#">II</a>
+    <a href="#">III</a>
+    <a href="#">IV</a>
+  </div>
+  <a href="#NBA">NBA</a>
+  <a href="#NBA">Calender of Events</a>
+  <a href="#NBA">TEQUIP-III</a>
+  <a href="#NBA">Research</a>
+  <a href="#NBA">Projects</a>
+</div>
+
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
