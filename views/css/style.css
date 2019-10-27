@@ -44,6 +44,22 @@ h6 {
   margin: 0 0 20px 0;
   padding: 0;
 }
+.heading{
+  font-size: 30px;
+  font-family: 'Montserrat', serif;
+  font-weight: 400;
+  /* color: #7856fe;
+   */
+   color: #007bff;
+
+}
+/* a {
+  color: #f74753;
+} */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
 
 /* Back to top button */
 
@@ -1188,7 +1204,12 @@ h6 {
   background: #0067d5;
   cursor: pointer;
 }
-
+*+.button-link {
+  margin-top: 20px;
+}
+.button-link, .button-link:active, .button-link:focus {
+  color: #000;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1311,6 +1332,7 @@ h6 {
   color: #fff;
   transition: 0.3s;
   cursor: pointer;
+  font: 400 15px Arial;
 }
 
 #footer .footer-top .footer-newsletter input[type="submit"]:hover {
@@ -1419,4 +1441,8 @@ h6 {
   #intro {
     padding: 100px 0 20px 0;
   }
+}
+
+.h4, dl, h4, ol, p, ul {
+   font-size: 14px; 
 }
