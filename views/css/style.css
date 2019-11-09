@@ -31,6 +31,7 @@ a:focus {
 p {
   padding: 0;
   margin: 0 0 30px 0;
+  font-family: "Raleway";
 }
 
 h1,
@@ -39,20 +40,27 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
 }
 .heading{
   font-size: 30px;
-  font-family: 'Montserrat', serif;
+  font-family: 'Nunito', serif;
   font-weight: 400;
   /* color: #7856fe;
    */
    color: #007bff;
 
 }
+/* .flexbox{
+  display: flex;
+  flex-direction:column; 
+}
+.item-first{
+  order: 2;
+} */
 /* a {
   color: #f74753;
 } */
